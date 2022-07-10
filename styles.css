@@ -1,0 +1,117 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    display: flex;
+    flex-direction: column;
+    color: #5e00e1;
+}
+
+img {
+    width: 100px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-image: url(nowa-sol.jpg);
+    background-size: cover;
+    height: 800px;
+    padding: 10px 0 40px 0;
+    color: white;
+}
+
+.hero-text {
+    background: #8338ec;
+    width: 400px;
+    border-radius: 10px;
+    padding: 2px 20px;
+    margin: 5px;
+}
+
+#town-name {
+    width: 200px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#town-name:hover {
+    position: relative;
+}
+
+#town-name:hover:after {
+    content: url("poland.png");
+    position: absolute;
+    left: 200px;
+    top: 56px;
+    animation: fadeIn 2s;
+}
+
+#activities {
+    background-color: #8ecae6;
+}
+
+#activities-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px;
+}
+
+.act-element {
+    width: 200px;
+    margin: 15px;
+}
+
+.act-img {
+    border-radius: 90%;
+    width: 150px;
+    height: 140px;
+}
+
+.act-title {
+    height: 70px;
+}
+
+#info {
+    margin-top: 10px;
+    background: #fee440;
+}
+
+ul {
+    text-align: left;
+    list-style-type: square;
+}
+
+#guide {
+    color: #f4cfbe;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 50px auto 50px auto;
+    padding: 5px 10px;
+    background-color: #fb5607;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #ff006e;
+}
+
+#merick {
+    height: 200px;
+    width: 180px;
+    margin-right: 10px
+}
